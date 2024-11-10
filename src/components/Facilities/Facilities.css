@@ -1,0 +1,128 @@
+/* Facilities Section */
+.facilities-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #FFFAF0;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Section Heading */
+.facilities-section h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3rem;
+    color: #FF6F61;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 12px rgba(255, 111, 97, 0.3);
+    position: relative;
+}
+
+/* Decorative Line Below Heading */
+.facilities-section h1::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 6px;
+    background: #FF6F61;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+/* Horizontal Marquee Container */
+.facilities-marquee {
+    display: flex;
+    gap: 40px;
+    /* overflow: hidden; */
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    padding: 20px 0;
+}
+
+/* Facility Card Styling */
+.facility-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 10px 30px;    
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect on Cards */
+.facility-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Large Icon Styling */
+.facility-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate Icon on Hover */
+.facility-card:hover img {
+    transform: rotate(10deg) scale(1.05);
+}
+
+/* Facility Name */
+.facility-card p {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.5rem;
+    color: #FF6F61;
+    text-align: center;
+}
+.paused{
+    animation-play-state: paused;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .facilities-section {        
+        padding: 40px 20px;        
+    }
+    .facilities-marquee {
+        gap: 40px;
+        padding: 5px 0;
+    }
+
+    .facility-card {
+        width: 20rem;
+        padding: 5px 10px;        
+    }
+
+    .facility-card img {
+        width: 80px;
+        height: 80px;
+        margin-top: 5px;
+    }
+
+    .facility-card p {
+        font-size: 0.9rem;
+    }
+    .facilities-section h1{
+        font-size: 1.3rem;
+    }
+}

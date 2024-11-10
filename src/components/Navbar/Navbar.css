@@ -1,0 +1,202 @@
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #fffaf0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 100%;
+}
+
+.Navbar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.Navbar img:hover {
+  transform: scale(1.1);
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: black;
+}
+
+.navbar-menu p {
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu p:hover {
+  color: #ff6347;
+}
+
+.side-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.side-buttons button {
+  width: 80px;
+  height: 50px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  color: #ff6347;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none; /* Hidden on desktop */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+
+@media (min-width: 1200px){
+  .Navbar {
+    justify-content: space-between;
+    padding: 15px 30px; /* Adjust padding for larger screens */
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
+/* Large screens (Desktops and Tablets, Laptops) */
+@media (min-width: 1024px) {
+  .Navbar {
+    justify-content: space-between;
+    padding: 15px 30px; /* Adjust padding for larger screens */
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .navbar-menu {
+    gap: 40px; /* More space between menu items */    
+  }
+
+  .side-buttons {
+    gap: 40px;
+  }
+
+  .side-buttons button {
+    font-size: 1.3rem;
+  }
+}
+
+/* Medium screens (Tablets and small desktops) */
+/* @media (min-width: 768px) and (max-width: 1023px) {
+  .Navbar {
+    justify-content: space-between;
+    padding: 10px 20px;  
+    width: 168%;  
+  }
+
+  .navbar-menu {
+    gap: 25px;
+    font-size: 1.5rem;
+  }
+
+  .side-buttons {
+    gap: 15px;
+  }
+
+  .side-buttons button {
+    font-size: 1.3rem;
+  }
+} */
+
+/* Small screens (Phones and smaller tablets) */
+@media (max-width: 767px) {
+  .Navbar {
+    flex-direction: row; /* Stack items vertically */
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .Navbar img {
+    width: 65px;
+    height: 65px;    
+  }
+
+  .navbar-menu {
+    display: none; /* Hide the menu initially */
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #fffaf0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    text-align: center;
+  }
+
+  .navbar-menu.open {
+    display: flex; /* Show the menu when it is toggled */
+  }
+
+  .hamburger {
+    display: block;
+    color: #ff6347;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .side-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .side-buttons button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Very small screens (Phones smaller than 320px) */
+@media (max-width: 320px) {
+  .Navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-menu {
+    display: none;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .side-buttons {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+  
+  .hamburger{
+    font-size: 22px;
+  }  
+}

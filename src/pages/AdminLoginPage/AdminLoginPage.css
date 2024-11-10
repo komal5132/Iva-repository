@@ -1,0 +1,86 @@
+
+.admin-login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../../assets/loginBackground01.webp");
+    background-size: cover;
+    background-position: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  .admin-form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 170px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="password"] {
+    margin-bottom: 20px;
+  }
+  
+  .form-actions button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF6347;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-actions button:hover {
+    background-color: #e5533b;
+  }
+  
+  .toggle-text {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .toggle-text span {
+    color: #FF6347;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .toggle-text span:hover {
+    text-decoration: underline;
+  }
+  

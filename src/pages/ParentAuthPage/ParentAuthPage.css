@@ -1,0 +1,114 @@
+/* Page Background */
+.parent-auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../../assets/loginBackground.webp") no-repeat center center;
+    background-size: cover;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Form Container */
+.form-container {
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 350px;
+    margin-bottom: 100px;
+}
+
+/* Tab Navigation */
+.form-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.form-tab {
+    font-size: 18px;
+    color: #555;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.form-tab.active {
+    color: #FF6347;
+    border-bottom: 3px solid #FF6347;
+}
+
+/* Form Styling */
+form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input:focus {
+    border-color: #FF6347;
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF6347;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #e5553b;
+}
+
+.form-options {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.form-options a {
+    color: #FF6347;
+    text-decoration: none;
+}
+
+.toggle-form-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.toggle-form-text span {
+    color: #FF6347;
+    cursor: pointer;
+    font-weight: 600;
+}

@@ -1,0 +1,236 @@
+.activity-cards-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  /* background: url("../../assets/gallery-background.mp4") no-repeat center/cover; */
+  background-color: #fffaf0;
+  position: relative;
+  overflow: hidden;
+}
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+/* Glassmorphism Overlay for the entire section */
+.activity-cards-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); /* Semi-transparent white */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: -1;
+}
+
+/* Header Styling */
+.heading h1 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 3rem;
+  color: #ff6347;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards Grid with Blur Effect */
+/* .cards-grid {
+    width: 80%;    
+} */
+
+/* Grid Layout for Cards */
+.gallery-grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px; /* Adjusted for better spacing */
+  padding: 20px;
+  margin-top: 0px;
+}
+
+/* Individual Card Styling */
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Image Container */
+.img-conatiner {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* Card Image with Hover Effect */
+.activity-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.activity-card img:hover {
+  transform: scale(1.08);
+}
+
+/* Card Headings */
+.activity-card h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2rem;
+  color: #ff6347;
+  margin-bottom: 12px;
+}
+
+/* Card Description */
+.activity-card p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Button Styling */
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+  user-select: none;
+}
+
+.button-87:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+
+/* Card Hover Effect */
+.activity-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Layout for All Screens */
+@media (max-width: 768px) {
+    .activity-cards-section {
+        width: 100%;
+      }
+    .heading h1 {
+    font-size: 1.3rem;
+  }
+  .gallery-grid {
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+    padding: 5px;    
+  }
+  .cards-grid {            
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    margin: auto;
+  }  
+  .activity-card {
+    padding: 5px;
+    align-items: center;
+    width: 9rem;
+  }
+  .img-conatiner {
+    width: 5rem;
+    height: 5rem;     
+  }      
+  .activity-card p {    
+    font-size: 0.8rem;        
+    width: 40%;
+    line-height: 1;
+  }
+  .button-87 {
+    font-size: 0.7rem;    
+    padding: 5px 5px;    
+    background-size: 200% auto;    
+    font-weight: 600;
+    margin: 0.3rem;
+  }
+  
+}
+@media (min-width: 1025px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+    gap: 50px;
+  }
+}
+
+/* @media (max-width: 320px){
+    .activity-cards-section {
+        width: 168%;
+    }    
+    .heading h1{
+        font-size: 2rem;
+    }
+    .gallery-grid{
+        grid-template-columns: 1fr;
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+    }
+    .activity-card {        
+        padding: 25px;
+        width: 300px;                    
+    }
+    .cards-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+} */
+/* @media (min-width: 768px) and (max-width: 1023px){
+    .gallery-grid{
+        grid-template-columns: 1fr 1fr;        
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+    }
+} */

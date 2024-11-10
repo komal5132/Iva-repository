@@ -1,0 +1,226 @@
+.programs-section {
+    padding: 60px 40px;
+    background-color: #FFFAF0;
+    text-align: center;
+}
+
+.programs-heading h1 {
+    font-size: 2.5rem;
+    color: #FF6347;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.programs-heading p{
+    font-size: 20px;
+
+}
+
+.programs-cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.program-card {
+    width: 300px;
+    background-color: #FFF5E6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: scale(1.05);
+}
+
+.program-card img:hover {
+    transform: scale(1.05);
+}
+
+
+.program-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.program-card h3 {
+    color: #FFA500;
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.program-card p {
+    color: #555;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* CSS */
+.button-89 {
+    --b: 3px; /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #FF6347; /* updated color shade */
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background: conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 20px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 40px;
+  }
+  
+  
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+@media (max-width: 320px){
+ .programs-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }   
+ .program-card {
+    width: 240px;
+    padding: 30px;    
+}
+.program-card h3 {    
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.program-card p {    
+    margin-top: 5px;
+    font-size: 1rem;    
+}
+.programs-section{
+    width: 168%;
+    padding: 20px 10px;
+}
+.programs-heading h1 {
+    font-size: 1.6rem;         
+}
+}
+
+/* @media (max-width: 320px){
+    .programs-cards{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }   
+    .program-card {
+       width: 240px;
+       padding: 30px;    
+   }
+   .program-card h3 {    
+       margin-top: 10px;
+       font-size: 1.2rem;
+   }
+   
+   .program-card p {    
+       margin-top: 5px;
+       font-size: 1rem;    
+   }
+   .programs-section{
+       width: 168%;
+       padding: 20px 10px;
+   }
+   .programs-heading h1 {
+       font-size: 1.6rem;         
+   }
+   } */
+
+   @media (max-width: 767px){
+    .programs-section {
+        padding: 30px 10px;
+    }
+    .programs-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.9rem;
+     }   
+     .program-card {
+        width: 10rem;
+        padding: 10px;    
+    }
+    .program-card h3 {    
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+    
+    .program-card p {    
+        margin-top: 2px;
+        font-size: 0.9rem;    
+    }
+    .programs-section{
+        width: 100%;        
+    }
+    .programs-heading h1 {
+        font-size: 1.3rem;         
+    }
+    .program-card img {
+        width: 60%;
+    }
+   }
+
+
+   /* @media (min-width: 768px) and (max-width: 1023px){
+    .programs-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 168%;
+    }
+    .programs-heading h1 {
+        font-size: 2.1rem;         
+    }
+    .programs-cards{                
+        align-items: center;
+        justify-content: center;
+        
+     }   
+     .program-card {
+        width: 260px;
+        padding: 20px;    
+    }
+    .program-card h3 {    
+        margin-top: 10px;
+        font-size: 1.4rem;
+    } */
+    
+    /* .program-card p {    
+        margin-top: 5px;
+        font-size: 1.2rem;    
+    }
+   } */
+
+
+   @media (max-width:1024px) {
+    .programs-section{
+        width: 100%;
+    }
+   }

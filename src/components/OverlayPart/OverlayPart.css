@@ -1,0 +1,111 @@
+/* Overlay Styling */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  /* Overlay Content */
+  .overlayContent {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title */
+  .overlayContent h2 {
+    color: #ff6347;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Overlay Divs for Role Selection */
+  .overlay-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    transition: transform 0.2s ease;
+  }
+  
+  .overlay-div:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Role Icons */
+  .overlay-div img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  /* Role Buttons */
+  .roleButton {
+    padding: 12px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 280px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .parent-div .roleButton {
+    background-color: #ffa07a; /* Light salmon */
+  }
+  
+  .teacher-div .roleButton {
+    background-color: #ff6347; /* Theme color */
+  }
+  
+  .admin-div .roleButton {
+    background-color: #ff4500; /* Orange Red */
+  }
+  
+  .roleButton:hover {
+    filter: brightness(0.9);
+  }
+  
+  /* Close Button */
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 10px;
+    display: flex;
+    font-size: 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .closeButton:hover {
+    background-color: #ff4500;
+  }
+  .new-user{
+      cursor: pointer;
+  }
+  .new-user span{
+      color: #ff4500;
+      font-weight: 600;
+  }
