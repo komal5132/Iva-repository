@@ -11,11 +11,10 @@ import FAQ_SECTIONS from "../../components/FAQ_section/FAQ_SECTIONS";
 import { kidsContext } from "../../context/kidsContextProvider";
 
 const Homepage = () => {
-  const { isOverlayVisible, setOverlayVisible, showOverlay, hideOverlay } =
+  const { isOverlayVisible} =
     useContext(kidsContext);
   return (
-    <div className={`homePage ${isOverlayVisible ? "blurred" : ""}`}>
-      <Menubar />
+    <div className={`homePage ${isOverlayVisible ? "blurred" : ""}`}>    
       <Banner />
       <Program />
       <Gallery />

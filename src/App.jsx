@@ -16,6 +16,10 @@ import { Route,Routes } from 'react-router-dom'
 import AdminLoginPage from './pages/AdminLoginPage/AdminLoginPage.JSX'
 import TeacherLoginSignUp from './pages/TeacherLoginSignUp/TeacherLoginSignUp'
 import ParentAuthPage from './pages/ParentAuthPage/ParentAuthPage'
+import PlaygroupPage from './pages/PlaygroupPage/PlaygroupPage'
+import PP1Page from './pages/PP1Page/PP1Page'
+import PP2Page from './pages/PP2Page/PP2Page'
+import PP3Page from './pages/PP3page/PP3Page'
 
 
 const App = () => {
@@ -28,6 +32,10 @@ const App = () => {
         <Route path='/adminLogin' element={<AdminLoginPage/> }/>
         <Route path='/teacherLogin' element={<TeacherLoginSignUp/> }/>
         <Route path='/parentLogin' element={<ParentAuthPage/> }/>
+        {/* <Route path='/playgroup' element={<PlaygroupPage/> }/>
+        <Route path='/PP1Page' element={<PP1Page/> }/>
+        <Route path='/PP2Page' element={<PP2Page/> }/>
+        <Route path='/PP3Page' element={<PP3Page/> }/> */}
       </Routes>             
       <Footer/>
       </KidsContextProvider>

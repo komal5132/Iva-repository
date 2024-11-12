@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const { isOverlayVisible, setOverlayVisible, showOverlay, hideOverlay, overlayMode } = useContext(kidsContext);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle menu on mobile
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -19,12 +19,9 @@ const Navbar = () => {
         <Link to={"/"}>
           <img src={navbarLoogo} alt="" onClick={() => { hideOverlay(); setIsMenuOpen(false); }} />
         </Link>
-
-        {/* Hamburger icon for mobile screens */}        
-
-        {/* Navbar menu items, only visible when menu is open on mobile */}
+             
         <div className={`navbar-menu ${isMenuOpen ? "open" : ""}`}>
-          <p onClick={toggleMenu}>Home</p>
+        <Link to={"/"} style={{ textDecoration: "none", color: "black" }}><p onClick={toggleMenu}>Home</p></Link>          
           <a href="#program" style={{ textDecoration: "none", color: "black" }} onClick={toggleMenu}>
             <p>Programs</p>
           </a>

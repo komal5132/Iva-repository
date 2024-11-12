@@ -8,7 +8,7 @@ import { kidsContext } from '../../context/kidsContextProvider';
 import { Link } from 'react-router-dom';
 
 const OverlayPart = () => {
-  const { isOverlayVisible, setOverlayVisible, hideOverlay, overlayMode } = useContext(kidsContext);
+  const {hideOverlay } = useContext(kidsContext);
   const [isSignUpMode, setIsSignUpMode] = useState(false); // New state for toggling login/sign-up
 
   const showSignUp = () => setIsSignUpMode(true);  // Set mode to sign-up
