@@ -8,7 +8,7 @@ import OverlayPart from "../OverlayPart/OverlayPart";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const { isOverlayVisible, setOverlayVisible, showOverlay, hideOverlay, overlayMode } = useContext(kidsContext);
+  const { isOverlayVisible, showOverlay, hideOverlay } = useContext(kidsContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -34,10 +34,10 @@ const Navbar = () => {
         </div>
 
         <div className={`side-buttons ${isMenuOpen ? "open" : ""}`}>        
-          <button className="dynamic-button" onClick={() => { showOverlay(); overlayMode("login"); setIsMenuOpen(false); }}>
+          <button className="dynamic-button" onClick={() => { showOverlay();  setIsMenuOpen(false); }}>
             Login
           </button>
-          <button className="signup-button" onClick={() => { showOverlay(); overlayMode("signup"); setIsMenuOpen(false); }}>
+          <button className="signup-button" onClick={() => { showOverlay();  setIsMenuOpen(false); }}>
             Sign Up
           </button>
           <div className="hamburger" onClick={toggleMenu}>
